@@ -3,22 +3,62 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A31BFF62C2755DC00A2EB0B /* pressboxdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BFF52C2755DC00A2EB0B /* pressboxdApp.swift */; };
-		7A31BFF82C2755DC00A2EB0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BFF72C2755DC00A2EB0B /* ContentView.swift */; };
+		7A31BFF62C2755DC00A2EB0B /* PressboxdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BFF52C2755DC00A2EB0B /* PressboxdApp.swift */; };
 		7A31BFFA2C2755DD00A2EB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BFF92C2755DD00A2EB0B /* Assets.xcassets */; };
 		7A31BFFD2C2755DD00A2EB0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BFFC2C2755DD00A2EB0B /* Preview Assets.xcassets */; };
+		7A31C0052C275B3000A2EB0B /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 7A31C0042C275B3000A2EB0B /* Auth */; };
+		7A31C0072C275B3000A2EB0B /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 7A31C0062C275B3000A2EB0B /* Functions */; };
+		7A31C0092C275B3000A2EB0B /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 7A31C0082C275B3000A2EB0B /* PostgREST */; };
+		7A31C00B2C275B3000A2EB0B /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 7A31C00A2C275B3000A2EB0B /* Realtime */; };
+		7A31C00D2C275B3000A2EB0B /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 7A31C00C2C275B3000A2EB0B /* Storage */; };
+		7A31C0102C275B9300A2EB0B /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31C00F2C275B9300A2EB0B /* Supabase.swift */; };
+		7A31C0132C275CDD00A2EB0B /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7A31C0122C275CDD00A2EB0B /* Supabase */; };
+		7A31C0162C275D7200A2EB0B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31C0152C275D7200A2EB0B /* AuthView.swift */; };
+		7A31C0192C27718A00A2EB0B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31C0182C27718A00A2EB0B /* AppView.swift */; };
+		7A31C0232C278A1300A2EB0B /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31C0222C278A1300A2EB0B /* AddReview.swift */; };
+		7A31C0292C279D3200A2EB0B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31C0282C279D3200A2EB0B /* OnboardingView.swift */; };
+		7A31C02B2C279E0E00A2EB0B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31C02A2C279E0E00A2EB0B /* Models.swift */; };
+		7ABB39CB2C291FAC00A03229 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39CA2C291FAC00A03229 /* ProfileImage.swift */; };
+		7ABB39CD2C2A3D0C00A03229 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39CC2C2A3D0C00A03229 /* Utils.swift */; };
+		7ABB39CF2C2A5F2100A03229 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39CE2C2A5F2100A03229 /* LoadingView.swift */; };
+		7ABB39D12C2CF40B00A03229 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39D02C2CF40B00A03229 /* RatingView.swift */; };
+		7ABB39D72C3B7D7200A03229 /* GameListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39D62C3B7D7200A03229 /* GameListItem.swift */; };
+		7ABB39D92C3B811C00A03229 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39D82C3B811C00A03229 /* SearchBar.swift */; };
+		7ABB39DD2C3B8E8000A03229 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB39DC2C3B8E8000A03229 /* GameListView.swift */; };
+		7ADF925B2C28B82C0041F385 /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF925A2C28B82C0041F385 /* NavbarView.swift */; };
+		7ADF925D2C28BDFB0041F385 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF925C2C28BDFB0041F385 /* HomeView.swift */; };
+		7ADF925F2C28BE020041F385 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF925E2C28BE020041F385 /* ProfileView.swift */; };
+		7ADF92632C291A5D0041F385 /* Play-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF92612C28C71C0041F385 /* Play-Bold.ttf */; };
+		7ADF92642C291A610041F385 /* Play-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF92622C28C71C0041F385 /* Play-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A31BFF22C2755DC00A2EB0B /* pressboxd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pressboxd.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A31BFF52C2755DC00A2EB0B /* pressboxdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pressboxdApp.swift; sourceTree = "<group>"; };
-		7A31BFF72C2755DC00A2EB0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A31BFF52C2755DC00A2EB0B /* PressboxdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressboxdApp.swift; sourceTree = "<group>"; };
 		7A31BFF92C2755DD00A2EB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A31BFFC2C2755DD00A2EB0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A31C00F2C275B9300A2EB0B /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		7A31C0152C275D7200A2EB0B /* AuthView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		7A31C0182C27718A00A2EB0B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		7A31C0222C278A1300A2EB0B /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
+		7A31C0282C279D3200A2EB0B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7A31C02A2C279E0E00A2EB0B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7ABB39CA2C291FAC00A03229 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		7ABB39CC2C2A3D0C00A03229 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7ABB39CE2C2A5F2100A03229 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7ABB39D02C2CF40B00A03229 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		7ABB39D62C3B7D7200A03229 /* GameListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListItem.swift; sourceTree = "<group>"; };
+		7ABB39D82C3B811C00A03229 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		7ABB39DC2C3B8E8000A03229 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		7ADF925A2C28B82C0041F385 /* NavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		7ADF925C2C28BDFB0041F385 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7ADF925E2C28BE020041F385 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7ADF92612C28C71C0041F385 /* Play-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Bold.ttf"; sourceTree = "<group>"; };
+		7ADF92622C28C71C0041F385 /* Play-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A31C0092C275B3000A2EB0B /* PostgREST in Frameworks */,
+				7A31C0072C275B3000A2EB0B /* Functions in Frameworks */,
+				7A31C0132C275CDD00A2EB0B /* Supabase in Frameworks */,
+				7A31C0052C275B3000A2EB0B /* Auth in Frameworks */,
+				7A31C00D2C275B3000A2EB0B /* Storage in Frameworks */,
+				7A31C00B2C275B3000A2EB0B /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +83,7 @@
 			children = (
 				7A31BFF42C2755DC00A2EB0B /* pressboxd */,
 				7A31BFF32C2755DC00A2EB0B /* Products */,
+				7A31C0112C275CDD00A2EB0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +98,23 @@
 		7A31BFF42C2755DC00A2EB0B /* pressboxd */ = {
 			isa = PBXGroup;
 			children = (
-				7A31BFF52C2755DC00A2EB0B /* pressboxdApp.swift */,
-				7A31BFF72C2755DC00A2EB0B /* ContentView.swift */,
-				7A31BFF92C2755DD00A2EB0B /* Assets.xcassets */,
+				7A31C0182C27718A00A2EB0B /* AppView.swift */,
+				7ABB39CE2C2A5F2100A03229 /* LoadingView.swift */,
+				7ADF925A2C28B82C0041F385 /* NavbarView.swift */,
+				7A31C0222C278A1300A2EB0B /* AddReview.swift */,
+				7ABB39D02C2CF40B00A03229 /* RatingView.swift */,
+				7ADF925C2C28BDFB0041F385 /* HomeView.swift */,
+				7ADF925E2C28BE020041F385 /* ProfileView.swift */,
+				7ABB39CA2C291FAC00A03229 /* ProfileImage.swift */,
+				7ABB39DC2C3B8E8000A03229 /* GameListView.swift */,
+				7ABB39D82C3B811C00A03229 /* SearchBar.swift */,
+				7A31BFF52C2755DC00A2EB0B /* PressboxdApp.swift */,
+				7A31C0212C27855400A2EB0B /* Assets */,
+				7ADF92602C28C7090041F385 /* Fonts */,
+				7A31C0142C275D6200A2EB0B /* Auth */,
+				7A31C00E2C275B8600A2EB0B /* Utils */,
 				7A31BFFB2C2755DD00A2EB0B /* Preview Content */,
+				7ABB39D62C3B7D7200A03229 /* GameListItem.swift */,
 			);
 			path = pressboxd;
 			sourceTree = "<group>";
@@ -65,6 +125,49 @@
 				7A31BFFC2C2755DD00A2EB0B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A31C00E2C275B8600A2EB0B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A31C02A2C279E0E00A2EB0B /* Models.swift */,
+				7A31C00F2C275B9300A2EB0B /* Supabase.swift */,
+				7ABB39CC2C2A3D0C00A03229 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7A31C0112C275CDD00A2EB0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A31C0142C275D6200A2EB0B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7A31C0152C275D7200A2EB0B /* AuthView.swift */,
+				7A31C0282C279D3200A2EB0B /* OnboardingView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7A31C0212C27855400A2EB0B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7A31BFF92C2755DD00A2EB0B /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7ADF92602C28C7090041F385 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7ADF92612C28C71C0041F385 /* Play-Bold.ttf */,
+				7ADF92622C28C71C0041F385 /* Play-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +186,14 @@
 			dependencies = (
 			);
 			name = pressboxd;
+			packageProductDependencies = (
+				7A31C0042C275B3000A2EB0B /* Auth */,
+				7A31C0062C275B3000A2EB0B /* Functions */,
+				7A31C0082C275B3000A2EB0B /* PostgREST */,
+				7A31C00A2C275B3000A2EB0B /* Realtime */,
+				7A31C00C2C275B3000A2EB0B /* Storage */,
+				7A31C0122C275CDD00A2EB0B /* Supabase */,
+			);
 			productName = pressboxd;
 			productReference = 7A31BFF22C2755DC00A2EB0B /* pressboxd.app */;
 			productType = "com.apple.product-type.application";
@@ -103,7 +214,7 @@
 				};
 			};
 			buildConfigurationList = 7A31BFED2C2755DC00A2EB0B /* Build configuration list for PBXProject "pressboxd" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -111,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 7A31BFE92C2755DC00A2EB0B;
+			packageReferences = (
+				7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 7A31BFF32C2755DC00A2EB0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A31BFFD2C2755DD00A2EB0B /* Preview Assets.xcassets in Resources */,
+				7ADF92642C291A610041F385 /* Play-Regular.ttf in Resources */,
+				7ADF92632C291A5D0041F385 /* Play-Bold.ttf in Resources */,
 				7A31BFFA2C2755DD00A2EB0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +253,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A31BFF82C2755DC00A2EB0B /* ContentView.swift in Sources */,
-				7A31BFF62C2755DC00A2EB0B /* pressboxdApp.swift in Sources */,
+				7A31C0102C275B9300A2EB0B /* Supabase.swift in Sources */,
+				7A31C0162C275D7200A2EB0B /* AuthView.swift in Sources */,
+				7ABB39D72C3B7D7200A03229 /* GameListItem.swift in Sources */,
+				7ABB39CB2C291FAC00A03229 /* ProfileImage.swift in Sources */,
+				7ADF925B2C28B82C0041F385 /* NavbarView.swift in Sources */,
+				7ADF925D2C28BDFB0041F385 /* HomeView.swift in Sources */,
+				7A31C0192C27718A00A2EB0B /* AppView.swift in Sources */,
+				7A31BFF62C2755DC00A2EB0B /* PressboxdApp.swift in Sources */,
+				7A31C0292C279D3200A2EB0B /* OnboardingView.swift in Sources */,
+				7A31C02B2C279E0E00A2EB0B /* Models.swift in Sources */,
+				7A31C0232C278A1300A2EB0B /* AddReview.swift in Sources */,
+				7ABB39DD2C3B8E8000A03229 /* GameListView.swift in Sources */,
+				7ADF925F2C28BE020041F385 /* ProfileView.swift in Sources */,
+				7ABB39CF2C2A5F2100A03229 /* LoadingView.swift in Sources */,
+				7ABB39CD2C2A3D0C00A03229 /* Utils.swift in Sources */,
+				7ABB39D92C3B811C00A03229 /* SearchBar.swift in Sources */,
+				7ABB39D12C2CF40B00A03229 /* RatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +405,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"pressboxd/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pressboxd/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pressboxd;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,9 +419,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pressboxd.pressboxd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,11 +439,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"pressboxd/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pressboxd/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pressboxd;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +453,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pressboxd.pressboxd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +485,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A31C0042C275B3000A2EB0B /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		7A31C0062C275B3000A2EB0B /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		7A31C0082C275B3000A2EB0B /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		7A31C00A2C275B3000A2EB0B /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		7A31C00C2C275B3000A2EB0B /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		7A31C0122C275CDD00A2EB0B /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A31C0032C275B3000A2EB0B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A31BFEA2C2755DC00A2EB0B /* Project object */;
 }

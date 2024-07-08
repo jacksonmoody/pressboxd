@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct pressboxdApp: App {
+struct PressboxdApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }
