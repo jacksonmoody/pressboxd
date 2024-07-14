@@ -13,7 +13,7 @@ struct AddReview: View {
     @State var liked = false
     @State var review = ""
     @State var selectedGame:Game?
-    @State var selectedTeam:String?
+    @State var selectedTeam: String?
     
     var body: some View {
         
@@ -43,14 +43,14 @@ struct AddReview: View {
                         
                         List {
                             Picker("Which team were you rooting for?", selection: $selectedTeam) {
-                                ForEach(0..<3) {
-                                    Text(teamOptions[$0]).tag(teamOptions[$0])
+                                ForEach(0 ..< teamOptions.count, id: \.self) { index in
+                                    Text(teamOptions[index]).tag(teamOptions[index] as String?)
                                 }
                             }
                             .padding(.top, 20.0)
                             .listRowBackground(Color.clear)
-                                .listRowSeparator(.hidden)
-                                .listRowInsets(EdgeInsets())
+                            .listRowSeparator(.hidden)
+                            .listRowInsets(EdgeInsets())
                         }
                         .scrollContentBackground(.hidden)
                         .listStyle(.plain)
