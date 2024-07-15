@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		778B705E2C4496980095CAA7 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B705D2C4496980095CAA7 /* UserListView.swift */; };
+		778B70602C449BB50095CAA7 /* OtherUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B705F2C449BB50095CAA7 /* OtherUserProfileView.swift */; };
 		7A31BFF62C2755DC00A2EB0B /* PressboxdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BFF52C2755DC00A2EB0B /* PressboxdApp.swift */; };
 		7A31BFFA2C2755DD00A2EB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BFF92C2755DD00A2EB0B /* Assets.xcassets */; };
 		7A31BFFD2C2755DD00A2EB0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BFFC2C2755DD00A2EB0B /* Preview Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		778B705D2C4496980095CAA7 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		778B705F2C449BB50095CAA7 /* OtherUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileView.swift; sourceTree = "<group>"; };
 		7A31BFF22C2755DC00A2EB0B /* pressboxd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pressboxd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A31BFF52C2755DC00A2EB0B /* PressboxdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressboxdApp.swift; sourceTree = "<group>"; };
 		7A31BFF92C2755DD00A2EB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				7ADF925E2C28BE020041F385 /* ProfileView.swift */,
 				7ABB39CA2C291FAC00A03229 /* ProfileImage.swift */,
 				7ABB39DC2C3B8E8000A03229 /* GameListView.swift */,
+				778B705D2C4496980095CAA7 /* UserListView.swift */,
+				778B705F2C449BB50095CAA7 /* OtherUserProfileView.swift */,
 				7ABB39D82C3B811C00A03229 /* SearchBar.swift */,
 				7A31BFF52C2755DC00A2EB0B /* PressboxdApp.swift */,
 				7A31C0212C27855400A2EB0B /* Assets */,
@@ -214,7 +220,7 @@
 				};
 			};
 			buildConfigurationList = 7A31BFED2C2755DC00A2EB0B /* Build configuration list for PBXProject "pressboxd" */;
-			compatibilityVersion = "Xcode 15.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -253,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778B70602C449BB50095CAA7 /* OtherUserProfileView.swift in Sources */,
 				7A31C0102C275B9300A2EB0B /* Supabase.swift in Sources */,
+				778B705E2C4496980095CAA7 /* UserListView.swift in Sources */,
 				7A31C0162C275D7200A2EB0B /* AuthView.swift in Sources */,
 				7ABB39D72C3B7D7200A03229 /* GameListItem.swift in Sources */,
 				7ABB39CB2C291FAC00A03229 /* ProfileImage.swift in Sources */,

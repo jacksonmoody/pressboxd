@@ -14,6 +14,8 @@ struct Profile: Encodable, Decodable {
     let bio: String?
     let profileURL: String?
     let onboarded: Bool
+    let following: [UUID]=[]
+    let followers: [UUID]=[]
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -48,6 +50,26 @@ struct Game: Encodable, Decodable, Hashable, Identifiable {
         case homeTeam = "home_team"
         case awayTeam = "away_team"
         case featureTag = "feature_tag"
+    }
+}
+
+struct User: Encodable, Decodable, Hashable, Identifiable {
+    let id: UUID
+    let username: String?
+    let fullName: String?
+    let bio: String?
+    let profileURL: String?
+    let following: [UUID]=[]
+    let followers: [UUID]=[]
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case username
+        case fullName = "full_name"
+        case bio
+        case profileURL = "profile_url"
+        case following
+        case followers
     }
 }
 

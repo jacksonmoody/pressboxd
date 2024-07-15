@@ -1,13 +1,12 @@
 {
-  "originHash" : "5f3436049b395fcbc71828c07d82e81a46af698ebe0b146cdc52345a5a60558d",
   "pins" : [
     {
       "identity" : "supabase-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/supabase/supabase-swift",
       "state" : {
-        "revision" : "a50157fb848e1748aaf432ed36f71604cfa96d29",
-        "version" : "2.13.3"
+        "revision" : "3c09d6e79a9e63a2c39311577f0d875d12dd340e",
+        "version" : "2.14.1"
       }
     },
     {
@@ -24,10 +23,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-crypto.git",
       "state" : {
-        "revision" : "bc1c29221f6dfeb0ebbfbc98eb95cd3d4967868e",
-        "version" : "3.4.0"
+        "revision" : "46072478ca365fe48370993833cb22de9b41567f",
+        "version" : "3.5.2"
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

@@ -13,6 +13,8 @@ struct ProfileView: View {
     @State var fullName = ""
     @State var description = ""
     @State var profileImage: ProfileImage?
+    @State var following = []
+    @State var followers = []
     
     
     var body: some View {
@@ -46,6 +48,29 @@ struct ProfileView: View {
                             .foregroundColor(Color.gray)
                             .frame(width: 150)
                     }
+                }.frame(maxWidth: .infinity, alignment: .center)
+    
+                HStack {
+                    VStack{
+                        Text(String(following.count))
+                            .font(.custom("Play", size: 20))
+                            .foregroundColor(Color("TextColor"))
+                            .padding(.top,10)
+                        Text("Following")
+                            .font(.custom("Play", size: 20))
+                            .foregroundColor(Color("TextColor"))
+                    }
+                    
+                    VStack{
+                        Text(String(followers.count))
+                            .font(.custom("Play", size: 20))
+                            .foregroundColor(Color("TextColor"))
+                            .padding(.top,10)
+                        Text("Followers")
+                            .font(.custom("Play", size: 20))
+                            .foregroundColor(Color("TextColor"))
+                    }
+                    
                 }.frame(maxWidth: .infinity, alignment: .center)
                 
                 VStack{
@@ -94,6 +119,9 @@ struct ProfileView: View {
             username = profile.username ?? ""
             fullName = profile.fullName ?? ""
             description = profile.bio ?? ""
+            following = profile.following
+            followers = profile.followers
+        
             
             if let profileURL = profile.profileURL, !profileURL.isEmpty {
                 profileImage = try await downloadImage(path: profileURL)
