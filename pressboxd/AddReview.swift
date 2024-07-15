@@ -14,10 +14,11 @@ struct AddReview: View {
     @State var review = ""
     @State var selectedGame:Game?
     @State var selectedTeam: String?
+    @State var isLoading = false
     
     var body: some View {
         
-        let teamOptions = [selectedGame?.homeTeam ?? "", selectedGame?.awayTeam ?? "", "Neither"]
+        let teamOptions = [selectedGame?.homeTeam?.teamName ?? "", selectedGame?.awayTeam?.teamName ?? "", "Neither"]
         
         Group {
             if selectedGame != nil {
@@ -54,7 +55,7 @@ struct AddReview: View {
                         }
                         .scrollContentBackground(.hidden)
                         .listStyle(.plain)
-                        .frame(width:.infinity, height:70)
+                        .frame(height:70)
                         
                         Text("What did you think?")
                             .foregroundColor(Color("TextColor"))
@@ -89,7 +90,25 @@ struct AddReview: View {
     }
     
     private func AddReview() {
-        isShowingReview.toggle()
+        Task {
+            isLoading = true
+            defer { isLoading = false }
+            
+            do {
+                let currentUser = try await supabase.auth.session.user
+                let review = Review(id: UUID(), userId: currentUser.id, game: selectedGame?.id ?? selectedGame?.homeTeam?.id, rating: rating, liked: liked, review: review, rootingFor: selectedTeam ?? "Neither")
+                
+                try await supabase
+                    .from("reviews")
+                    .insert(review)
+                    .execute()
+                
+                isShowingReview.toggle()
+                
+            } catch {
+                debugPrint(error)
+            }
+        }
     }
     
 }

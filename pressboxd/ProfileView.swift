@@ -12,7 +12,7 @@ struct ProfileView: View {
     @State var username = ""
     @State var fullName = ""
     @State var description = ""
-    @State var profileImage: ProfileImage?
+    @State var profileImage: CustomImage?
     
     
     var body: some View {
@@ -96,7 +96,7 @@ struct ProfileView: View {
             description = profile.bio ?? ""
             
             if let profileURL = profile.profileURL, !profileURL.isEmpty {
-                profileImage = try await downloadImage(path: profileURL)
+                profileImage = try await downloadImage(path: profileURL, database:"photos")
             }
             
         } catch {

@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ProfileImage: Transferable, Equatable {
+struct CustomImage: Transferable, Equatable {
   let image: Image
   let data: Data
 
   static var transferRepresentation: some TransferRepresentation {
     DataRepresentation(importedContentType: .image) { data in
-      guard let image = ProfileImage(data: data) else {
+      guard let image = CustomImage(data: data) else {
         throw TransferError.importFailed
       }
 
@@ -22,7 +22,7 @@ struct ProfileImage: Transferable, Equatable {
   }
 }
 
-extension ProfileImage {
+extension CustomImage {
   init?(data: Data) {
     guard let uiImage = UIImage(data: data) else {
       return nil

@@ -16,7 +16,7 @@ struct OnboardingView: View {
     @State private var description = ""
     
     @State private var imageSelection: PhotosPickerItem?
-    @State private var profileImage: ProfileImage?
+    @State private var profileImage: CustomImage?
     
     @State private var isLoading = false
     @State private var didError = false
@@ -134,7 +134,7 @@ struct OnboardingView: View {
     private func loadTransferable(from imageSelection: PhotosPickerItem) {
         Task {
             do {
-                profileImage = try await imageSelection.loadTransferable(type: ProfileImage.self)
+                profileImage = try await imageSelection.loadTransferable(type: CustomImage.self)
             }
         }
     }
