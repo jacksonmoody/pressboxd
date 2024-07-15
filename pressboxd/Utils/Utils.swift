@@ -8,7 +8,7 @@
 import Foundation
 import Storage
 
-func uploadImage(profileImage:ProfileImage?) async throws -> String? {
+func uploadImage(profileImage:CustomImage?) async throws -> String? {
     
     guard let data = profileImage?.data else { return nil }
     
@@ -25,8 +25,9 @@ func uploadImage(profileImage:ProfileImage?) async throws -> String? {
     return filePath
 }
 
-func downloadImage(path: String) async throws -> ProfileImage? {
-    let data = try await supabase.storage.from("photos").download(path: path)
-    let profileImage = ProfileImage(data: data)
-    return profileImage
+func downloadImage(path: String, database:String) async throws -> CustomImage? {
+    let data = try await supabase.storage.from(database).download(path: path)
+    let customImage = CustomImage(data: data)
+    return customImage
 }
+

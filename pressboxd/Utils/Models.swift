@@ -27,16 +27,42 @@ struct Profile: Encodable, Decodable {
     }
 }
 
+struct Team: Encodable, Decodable, Hashable, Identifiable {
+    let id: UUID
+    let sport: String?
+    let league: String?
+    let teamName: String
+    let location: String?
+    let arenaStadium: String?
+    let coach: String?
+    let generalManager: String?
+    let descriptiveText: String?
+    let logo: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case sport
+        case league
+        case teamName = "team_name"
+        case location
+        case arenaStadium = "arena_stadium"
+        case coach
+        case generalManager = "general_manager"
+        case descriptiveText = "descriptive_text"
+        case logo
+    }
+}
+
 struct Game: Encodable, Decodable, Hashable, Identifiable {
     let id: UUID
-    let sport: String
-    let league: String
-    let timeZone: String
-    let date: String
-    let startTime: String
-    let gameName: String
-    let homeTeam: String
-    let awayTeam: String
+    let sport: String?
+    let league: String?
+    let timeZone: String?
+    let date: String?
+    let startTime: String?
+    let gameName: String?
+    let homeTeam: Team?
+    let awayTeam: Team?
     let featureTag: String?
     
     enum CodingKeys: String, CodingKey {
@@ -75,6 +101,20 @@ struct User: Encodable, Decodable, Hashable, Identifiable {
 
 struct Review: Encodable, Decodable {
     let id: UUID
-    let gameId: UUID
+    let userId: UUID?
+    let game: UUID?
+    let rating: Int
+    let liked: Bool?
+    let review: String?
+    let rootingFor: String?
     
+    enum CodingKeys: String, CodingKey {
+        case id
+        case userId = "user_id"
+        case game
+        case rating
+        case liked
+        case review
+        case rootingFor = "rooting_for"
+    }
 }

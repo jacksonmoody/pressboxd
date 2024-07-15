@@ -20,14 +20,14 @@ struct GameListView: View {
                 Text("Add Review")
                     .font(.custom("Play-Bold", size: 40))
                     .foregroundColor(Color("TextColor"))
-                    .padding(.leading, 20.0)
+                    .padding([.leading,.top], 20.0)
                     .padding(.bottom, 5.0)
                 SearchBar(text:$searchText, placeholder:"Search")
                     .padding(.horizontal, 10.0)
                 
                 List(searchResults, id: \.self, selection: $selectedGame) {
                     game in
-                    GameListItem(name: game.gameName, date: game.date)                .listRowBackground(Color.clear)
+                    GameListItem(name: game.gameName ?? "", date: game.date ?? "")                .listRowBackground(Color.clear)
                 }
                 .padding(.horizontal, 10.0)
                 .listStyle(PlainListStyle())
@@ -42,7 +42,7 @@ struct GameListView: View {
         if searchText.isEmpty {
             return games
         } else {
-            return games.filter { $0.gameName.localizedStandardContains(searchText) }
+            return games.filter { $0.gameName!.localizedStandardContains(searchText) }
         }
     }
     
@@ -50,7 +50,7 @@ struct GameListView: View {
         do {
             games = try await supabase
                 .from("games")
-                .select()
+                .select("id, game_name, date, home_team(*), away_team(*)")
                 .execute()
                 .value
             
